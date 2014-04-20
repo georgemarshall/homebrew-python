@@ -10,10 +10,10 @@ class Pillow < Formula
   depends_on :python3 => :optional
   depends_on 'freetype'
   depends_on 'jpeg'
-  depends_on 'libtiff'
-  depends_on 'little-cms2'
-  depends_on 'openjpeg'
-  depends_on 'webp'
+  depends_on 'libtiff' => :recommended
+  depends_on 'little-cms2' => :recommended
+  depends_on 'openjpeg' => :recommended
+  depends_on 'webp' => :recommended
 
   def install
     # Help pillow find zlib and freetype2
